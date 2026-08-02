@@ -1,7 +1,26 @@
 aid: swift-charge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swift-charge.png
 name: Swift Charge
-description: Swift Charge is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Swift Charge is an electric vehicle charging company that provides turn-key,
+  fully managed EV charging infrastructure to property owners across the hospitality,
+  education, and multi-family residential sectors, pairing installed charging hardware
+  with a payment application that lets EV drivers locate and pay for charging sessions.
+  It was surfaced as a portfolio company of 500 Global and added to the API Evangelist
+  network. As of this enrichment pass Swift Charge publishes a public marketing and
+  charger-map website but exposes no public developer API, documentation, SDKs, or
+  developer portal, so this profile is limited to company identity plus a domain-security
+  probe of its website host.
 url: https://raw.githubusercontent.com/api-evangelist/swift-charge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Electric Vehicles
+- EV Charging
+- Payments
+- Energy
+- Sustainability
+- Property Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/swift-charge-domain-security.yml
 - type: Website
   url: https://swiftcharge.io
+- type: Blog
+  url: https://swiftcharge.io/news
+- type: Support
+  url: https://swiftcharge.io/contact
+- type: TermsOfService
+  url: https://swiftcharge.io/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://swiftcharge.io/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
